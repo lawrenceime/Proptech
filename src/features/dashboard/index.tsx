@@ -8,6 +8,8 @@ import Grid from "@mui/material/Grid";
 import SalesOverviewCard from '../sales-overview-card';
 import { OverviewStatsCard } from '@/components/shared/overview-stat-card';
 import { FeaturedCard } from '@/components/shared/feature-card';
+import ProfileBlueIcon from '../../../public/components/profile-blue';
+import SolarHomeLinearIcon from '../../../public/components/solar_home-linear';
 
 const Dashboard = () => {
    return (
@@ -25,7 +27,8 @@ const Dashboard = () => {
         {/* RIGHT COLUMN: Listings and Users Summary */}
         <Grid size={{xs : 12 , lg : 4}}>
           <Stack spacing={3}>
-            <OverviewStatsCard 
+            <OverviewStatsCard
+              icon={<SolarHomeLinearIcon />}
               title="Listings Overview" 
               stats={[
                 { label: 'Total', value: '1.8k' },
@@ -34,6 +37,7 @@ const Dashboard = () => {
               ]} 
             />
             <OverviewStatsCard 
+              icon={<ProfileBlueIcon />}
               title="Users Overview" 
               stats={[
                 { label: 'Total', value: '20.7k' },
@@ -46,13 +50,13 @@ const Dashboard = () => {
 
         {/* BOTTOM ROW: Featured Listing Cards */}
         <Grid size={{xs : 12 , md : 4}}>
-          <FeaturedCard tag="MOST CLICKED" title="Urban Prime Plaza Premiere" image="/listing1.jpg" />
+          <FeaturedCard tag="MOST CLICKED" title="Urban Prime Plaza Premiere" image="/assets/expert-listing-image-1.png" />
         </Grid>
         <Grid size={{xs : 12 , md : 4}}>
-          <FeaturedCard tag="MOST WATCHLISTED" title="Urban Prime Plaza Premiere" image="/listing2.jpg" />
+          <FeaturedCard tag="MOST WATCHLISTED" title="Urban Prime Plaza Premiere" image="/assets/expert-listing-image-2.png" />
         </Grid>
         <Grid size={{xs : 12 , md : 4}}>
-          <FeaturedCard tag="HOTTEST LISTING" title="Urban Prime Plaza Premiere" image="/listing3.jpg" />
+          <FeaturedCard tag="HOTTEST LISTING" title="Urban Prime Plaza Premiere" image="/assets/expert-listing-image-3.png" />
         </Grid>
       </Grid>
     </Box>
