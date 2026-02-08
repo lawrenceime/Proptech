@@ -1,0 +1,72 @@
+import { colors } from "./colors";
+
+export const typography = {
+  fontSize: 12,
+  // fontFamily: "'Gilmer', sans-serif",
+  h1: {
+    fontSize: 26,
+    fontWeight: 600,
+    color: colors.black.main,
+  },
+  h2: {
+    fontSize: 24,
+    fontWeight: 600,
+    color: colors.black.main,
+  },
+  h3: {
+    fontSize: 20,
+    fontWeight: 600,
+    color: colors.black.main,
+  },
+  h4: {
+    fontSize: 18,
+    fontWeight: 700,
+    color: colors.black.main,
+  },
+  h5: {
+    fontSize: 16,
+    fontWeight: 600,
+    color: colors.black.main,
+  },
+  h6: {
+    fontSize: 14,
+    fontWeight: 600,
+    color: colors.black.main,
+  },
+  xxxl: {
+    fontSize: 24,
+    fontWeight: 400,
+    color: colors.black.main,
+  },
+  xxl: {
+    fontSize: 36,
+    fontWeight: 700,
+    color: colors.black.main,
+  },
+  xl: {
+    fontSize: 24,
+    fontWeight: 700,
+    color: colors.black.main,
+  },
+  lg: {
+    fontSize: 16,
+    fontWeight: 400,
+    color: colors.black.main,
+  },
+
+  md: {
+    fontSize: 14,
+    fontWeight: 400,
+    color: colors.black.main,
+  },
+  sm: {
+    fontSize: 12,
+    fontWeight: 400,
+    color: colors.black.main,
+  },
+  xs: {
+    fontSize: 10,
+    fontWeight: 400,
+    color: colors.black.main,
+  },
+};
