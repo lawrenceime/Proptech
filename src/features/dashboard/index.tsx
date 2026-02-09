@@ -19,12 +19,12 @@ const Dashboard = () => {
       </Typography>
 
       <Grid container spacing={3}>
-        {/* LEFT COLUMN: Sales Overview */}
+
         <Grid size={{xs : 12 , lg : 8}}>
           <SalesOverviewCard />
         </Grid>
 
-        {/* RIGHT COLUMN: Listings and Users Summary */}
+
         <Grid size={{xs : 12 , lg : 4}}>
           <Stack spacing={3}>
             <OverviewStatsCard
@@ -48,7 +48,7 @@ const Dashboard = () => {
           </Stack>
         </Grid>
 
-        {/* BOTTOM ROW: Featured Listing Cards */}
+
         <Grid size={{xs : 12 , md : 4}}>
           <FeaturedCard tag="MOST CLICKED" title="Urban Prime Plaza Premiere" image="/assets/expert-listing-image-1.png" />
         </Grid>

@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import SubNavbar from "@/components/sub-navbar";
 import { NAV_ITEMS } from "@/constant";
+import ChatWidget from "@/components/chat-widget";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
          options={NAV_ITEMS}  
       />
         {children}
+        <ChatWidget/>
       </body>
     </html>
   );
